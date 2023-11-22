@@ -10,7 +10,7 @@ applications:
             root: "frontend"
 
         #type: "nodejs:18"
-        stack: ['nodejs@18']
+        stack: ['nodejs@18', wkhtmltopdf, jq, imagemagick, graphviz]
 
         #build:
         #    flavor: none
