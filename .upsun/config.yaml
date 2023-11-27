@@ -46,7 +46,7 @@ applications:
             root: "backend"
 
         #type: "python:3.11"
-        stack: ["python@3.11", wkhtmltopdf, imagemagick, graphviz]
+        stack: ["python@3.11", "ruby@3.2", wkhtmltopdf, imagemagick, graphviz]
 
         #build:
         #    flavor: none
