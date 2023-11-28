@@ -65,6 +65,51 @@ applications:
                 /:
                     passthru: true
 
+    php:
+      source:
+        root: "php"
+
+      stack:
+        - "php@8.2":
+          extensions:
+            - ctype
+            - iconv
+            - apcu
+            - mbstring
+            - sodium
+            - xsl
+            - pdo_pgsql
+          disabled_extensions:
+            - sqlite3
+          max_execution_time: 300
+          memory_limit: 256M
+
+        - "node@20"
+        - "python@3.10"
+
+      # The web key configures the web server running in front of your app.
+      # More information: https://docs.platform.sh/create-apps/app-reference.html#web
+      web:
+        # Each key in locations is a path on your site with a leading /.
+        # More information: https://docs.platform.sh/create-apps/app-reference.html#locations
+        locations:
+          "/":
+            # The directory to serve static assets for this location relative to the app’s root directory. Must be an
+            # actual directory inside the root directory.
+            root: ""
+            # Whether to forward disallowed and missing resources from this location to the app. A string is a path
+            # with a leading / to the controller, such as /index.php.
+            passthru: '/index.php'
+            # Files to consider when serving a request for a directory.
+            index:
+              - index.php
+            # Whether to allow scripts to run. Doesn’t apply to paths specified in passthru. Meaningful only on PHP containers.
+            scripts: true
+            # Whether to allow serving files which don’t match a rule.
+            allow: true
+            headers:
+              Access-Control-Allow-Origin: "*"
+
 # #add_service_start
 # ######################################################################################################################
 # # Step 3: Add a service. Uncomment this section.
