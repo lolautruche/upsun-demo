@@ -10,7 +10,7 @@ applications:
             root: "frontend"
 
         #type: "nodejs:18"
-        stack: ['nodejs@18', facedetect]
+        stack: ['nodejs@18']
 
         #build:
         #    flavor: none
@@ -46,7 +46,7 @@ applications:
             root: "backend"
 
         #type: "python:3.11"
-        stack: ["python@3.11", "ruby@3.1", "php@8.1", wkhtmltopdf, imagemagick, graphviz]
+        stack: ["python@3.11", "ruby@3.1", "php@8.1"]
 
         #build:
         #    flavor: none
