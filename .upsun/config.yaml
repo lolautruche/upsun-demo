@@ -84,7 +84,7 @@ applications:
           max_execution_time: 300
           memory_limit: 256M
 
-        - "node@20"
+        - "nodejs@20"
         - "python@3.10"
 
       # The web key configures the web server running in front of your app.
