@@ -140,3 +140,8 @@ routes:
         id: backend
         type: upstream
         upstream: "backend:http"
+
+    "https://php.{default}/":
+        id: php
+        type: upstream
+        upstream: "php:http"
