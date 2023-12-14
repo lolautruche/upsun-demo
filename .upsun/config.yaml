@@ -86,6 +86,7 @@ applications:
 
         - "nodejs@20"
         - "python@3.10"
+        - imagemagick
 
       # The web key configures the web server running in front of your app.
       # More information: https://docs.platform.sh/create-apps/app-reference.html#web
