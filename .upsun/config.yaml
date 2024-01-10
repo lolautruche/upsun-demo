@@ -1,7 +1,7 @@
 #######################################################################################################################
 # Upsun demo project configuration
 #######################################################################################################################
-# Application configuration
+# Application configuration.
 applications:    
     # App 1: Frontend (JS)
     frontend:
@@ -79,9 +79,10 @@ applications:
             - sodium
             - xsl
             - pdo_pgsql
+            - ds
           disabled_extensions:
             - sqlite3
-          max_execution_time: 300
+          max_execution_time: 600
           memory_limit: 256M
 
         - "nodejs@20"
