@@ -68,6 +68,9 @@ applications:
     php:
       source:
         root: "php"
+      variables:
+        php:
+          max_execution_time: 600
 
       stack:
         - "php@8.2":
@@ -82,8 +85,6 @@ applications:
             - ds
           disabled_extensions:
             - sqlite3
-          max_execution_time: 600
-          memory_limit: 256M
 
         - "nodejs@20"
         - "python@3.10"
