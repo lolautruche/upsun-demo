@@ -74,12 +74,12 @@ applications:
           extensions:
             - ctype
             - iconv
-            #- apcu
+            - apcu
             - mbstring
-            #- sodium
-            #- xsl
-            #- pdo_pgsql
-            #- ds
+            - sodium
+            - xsl
+            - pdo_pgsql
+            - ds
           disabled_extensions:
             - sqlite3
           max_execution_time: 600
