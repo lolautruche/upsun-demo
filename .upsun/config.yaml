@@ -73,7 +73,7 @@ applications:
           max_execution_time: 600
 
       stack:
-        - "php@8.2":
+        - "php@8.3":
           extensions:
             - ctype
             - iconv
