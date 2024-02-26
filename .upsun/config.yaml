@@ -82,6 +82,7 @@ applications:
             - sodium
             - xsl
             - pdo_pgsql
+            - pdo_mysql
             - ds
           disabled_extensions:
             - sqlite3
