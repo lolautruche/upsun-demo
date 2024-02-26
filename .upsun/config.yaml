@@ -84,8 +84,8 @@ applications:
           #  - pdo_pgsql
           #  - pdo_mysql
           #  - ds
-          disabled_extensions:
-            - sqlite3
+          #disabled_extensions:
+          #  - sqlite3
 
         - "nodejs@20"
         - "python@3.10"
