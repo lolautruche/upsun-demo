@@ -76,11 +76,13 @@ applications:
         - "php@8.3":
           extensions:
             - apcu
+            - blackfire
             - xsl
             - pdo_pgsql
             - pdo_mysql
             - redis
             - ds
+            - zlib
           #disabled_extensions:
           #  - sqlite3
 
