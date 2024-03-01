@@ -75,15 +75,12 @@ applications:
       stack:
         - "php@8.3":
           extensions:
-          #  - ctype
-          #  - iconv
-          #  - apcu
-          #  - mbstring
-          #  - sodium
-          #  - xsl
+            - apcu
+            - xsl
             - pdo_pgsql
             - pdo_mysql
-          #  - ds
+            - redis
+            - ds
           #disabled_extensions:
           #  - sqlite3
 
